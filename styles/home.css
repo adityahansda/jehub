@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: #EAEAEA;
+}
+
+/**************Top bar design  *****************/
+
+.topbar {
+    background-color: rgb(227, 39, 39);
+    height: 20px;
+    width: 100%;
+}
+
+
+
+/**************bottom Nav bar design *****************/
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    /* Fix the navbar at the bottom */
+    bottom: 0;
+    /* Position it at the bottom */
+    width: 100%;
+    /* Full width */
+}
+
+
+.nav-button {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #f9d4d4;
+}

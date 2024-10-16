@@ -1,0 +1,18 @@
+body {
+    background-color: #EAEAEA;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo img {
+    position: absolute;
+    left: 88px;
+    top: 423px;
+    width: 350px;
+    height: 120px;
+}
