@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,10 +17,84 @@ body {
 /**************Top bar design  *****************/
 
 .topbar {
-    background-color: rgb(227, 39, 39);
-    height: 20px;
+    /* background-color: rgb(227, 39, 39); */
+    height: 120px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
+.nav-top img{
+    height: 40px;
+    width: 40px;
+    background-color:rgb(199, 196, 196);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.topbar .logo-top{
+    height: 60px;
+    width: 155px;
+}
+.topbar .profile_img{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.banner-container{
+    height: auto;
+    width: 100%;
+    padding: 5.9%;
+}
+
+.banner{
+    height: 200px;
+    width: 100%;
+    background-color: #FFCB46;
+    border-radius: 20px;
+    
+    
+}
+.banner div:nth-child(1){
+    height: 30%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.banner span{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+.banner div:nth-child(2){
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    
+    
+}
+
+.banner img{
+    height:155px;
+    width: 50%;
+}
+
+
 
 
 
