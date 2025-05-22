@@ -11,9 +11,71 @@ body {
 /**************Top bar design  *****************/
 
 .topbar {
-    background-color: rgb(227, 39, 39);
-    height: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
     width: 100%;
+
+}
+
+/* .profile_icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    background-color: blue;
+
+} */
+
+/**************cenetr design *****************/
+
+.notes_request {
+    background-color: #56d163;
+    height: 80px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+/* For fade and scale out */
+.notes_request.fade-out {
+    animation: fadeOutScale 0.2s forwards;
+}
+
+.notes_request.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes fadeOutScale {
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.notes_request.press {
+    transform: scale(0.95);
+}
+
+.notes_request span {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'roboto';
 }
 
 
@@ -45,4 +107,8 @@ body {
 
 .nav-button:hover {
     background-color: #f9d4d4;
+}
+
+.nav-button.press {
+    transform: scale(0.95);
 }
