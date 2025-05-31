@@ -9,6 +9,14 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007bff;
+    cursor: pointer;
+}
 
 .logo img {
     height: 50px;
@@ -79,6 +87,8 @@ button {
     background-color: #fff;
     color: #000;
     cursor: pointer;
+    font-weight: 800;
+
 }
 
 .divider {
