@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="topbar">
+        <!-- <img style=" height 30px" src="assets/fi-br-rainbow.svg" alt=""> -->
+        <img height="50px" src="assets/jharkhand_Enginner_s_Hub-watermark2.png" alt="">
+        <!-- <a href="" "nav-top"><img style="height: 45px;" src="assets/image.png" alt=""></a> -->
+    </div>
+
+    <!------------------------------------------------>
+    <!-------------Center Part---------------------------->
+    <!------------------------------------------------>
+
+    <!-- notes_request card sestion -->
+
+    <div class="notes_request" id="notes_request">
+        <span> Notes Status Check </span>
+    </div>
+    </div>
+
+
+    <!---------------------Notes Check Sestion----------------------------->
+
+    <div class="notes_check_sestion">
+
+    </div>
+
+    <!------------------------------------------------>
+    <!-------------Center Part---------------------------->
+    <!------------------------------------------------>
+
+
+    <!-- Bottom navigation bar -->
+    <div class="bottom_nav">
+        <div class="navbar">
+            <a href="#" id="home" class="nav-button"><img src="assets/li_home.svg" alt=""></a>
+            <a href="#" id="Status" class="nav-button"><img src="assets/fi-rr-hourglass.svg" alt=""></a>
+            <a href="#" id="Feed" class="nav-button"><img src="assets/fi-rr-camera.svg" alt=""></a>
+            <a href="#" id="Notification" class="nav-button"><img src="assets/fi-rr-bell.svg" alt=""></a>
+            <a href="#" id="Setting" class="nav-button"><img src="assets/setting-2.svg" alt=""></a>
+
+        </div>
+    </div>
+
+
+    <script>
+        const notesRequest = document.getElementById("notes_request");
+
+        const homeBtn = document.getElementById("home");
+        const statusBtn = document.getElementById("Status");
+        const feedbtn = document.getElementById("Feed");
+        const notifbtn = document.getElementById("Notification");
+        const settingbtn = document.getElementById("Setting");
+        const navButtons = document.querySelectorAll(".nav-button");
+
+        // Animate nav buttons
+        navButtons.forEach((btn) => {
+            btn.addEventListener("click", function () {
+                btn.classList.add("press");
+                setTimeout(() => {
+                    btn.classList.remove("press");
+                }, 150);
+            });
+        });
+
+        // Notes Request card
+
+        notesRequest.addEventListener("click", function () {
+
+
+            resetNavButtonBackgrounds();
+            statusBtn.style.backgroundColor = "#f9d4d4";
+            notesRequest.classList.remove("fade-in");
+            notesRequest.classList.add("fade-out");
+            // Hide after animation
+            setTimeout(() => {
+                notesRequest.style.display = "none";
+            }, 300);
+
+        });
+
+
+        // HOME BUTTON CLICKED
+        homeBtn.addEventListener("click", function () {
+            // Reset all button backgrounds
+            resetNavButtonBackgrounds();
+            homeBtn.style.backgroundColor = "#f9d4d4";
+
+            // Show & fade-in notesRequest
+            notesRequest.style.display = "flex";
+            notesRequest.classList.remove("fade-out");
+            notesRequest.classList.add("fade-in");
+        });
+
+
+
+        // STATUS BUTTON CLICKED
+        statusBtn.addEventListener("click", function () {
+            // Change background only for status
+            resetNavButtonBackgrounds();
+            statusBtn.style.backgroundColor = "#f9d4d4";
+
+            // Animate & hide notesRequest
+            notesRequest.classList.remove("fade-in");
+            notesRequest.classList.add("fade-out");
+
+            // Hide after animation
+            setTimeout(() => {
+                notesRequest.style.display = "none";
+            }, 300);
+        });
+
+
+        // FEED BUTTON CLICKED
+        feedbtn.addEventListener("click", function () {
+            // Reset all button backgrounds
+            resetNavButtonBackgrounds();
+            feedbtn.style.backgroundColor = "#f9d4d4";
+
+            // Show & fade-in notesRequest
+            notesRequest.style.display = "flex";
+            notesRequest.classList.remove("fade-out");
+            notesRequest.classList.add("fade-in");
+        });
+
+        // notfication BUTTON CLICKED
+        notifbtn.addEventListener("click", function () {
+            // Reset all button backgrounds
+            resetNavButtonBackgrounds();
+            notifbtn.style.backgroundColor = "#f9d4d4";
+
+            // Show & fade-in notesRequest
+            notesRequest.style.display = "flex";
+            notesRequest.classList.remove("fade-out");
+            notesRequest.classList.add("fade-in");
+        });
+
+        // notfication BUTTON CLICKED
+        settingbtn.addEventListener("click", function () {
+            // Reset all button backgrounds
+            resetNavButtonBackgrounds();
+            settingbtn.style.backgroundColor = "#f9d4d4";
+
+            // Show & fade-in notesRequest
+            notesRequest.style.display = "flex";
+            notesRequest.classList.remove("fade-out");
+            notesRequest.classList.add("fade-in");
+        });
+
+
+        // Helper: Reset backgrounds
+        function resetNavButtonBackgrounds() {
+            navButtons.forEach((btn) => {
+                btn.style.backgroundColor = "transparent";
+            });
+        }
+    </script>
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css"></script>
+
+
+
+
+</body>
+
+</html>
